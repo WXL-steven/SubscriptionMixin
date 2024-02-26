@@ -85,7 +85,7 @@ def is_valid_url(url: str) -> bool:
     # 使用urllib.parse来解析URL
     parsed = urlparse(url)
     # 检查scheme和netloc是否存在
-    return bool(parsed.scheme) and bool(parsed.netloc)  and re.match(url_regex, url)
+    return bool(parsed.scheme) and bool(parsed.netloc) and re.match(url_regex, url)
 
 
 @app.get("/convert", response_class=PlainTextResponse)
@@ -114,6 +114,7 @@ async def convert(subscription_url: str = Query(..., alias="subscription_url")):
 
     # 返回转换后的结果
     return converted_data
+
 
 if __name__ == "__main__":
     with open(r'test.yaml', 'r', encoding='utf-8') as file:
