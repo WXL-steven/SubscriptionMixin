@@ -1,0 +1,866 @@
+allow-lan: false
+clash-for-android:
+  append-system-dns: false
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.4.4
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - '*.time.edu.cn'
+  - '*.ntp.org.cn'
+  - +.pool.ntp.org
+  - time1.cloud.tencent.com
+  - music.163.com
+  - '*.music.163.com'
+  - '*.126.net'
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - '*.kuwo.cn'
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - '*.y.qq.com'
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - '*.xiami.com'
+  - '*.music.migu.cn'
+  - music.migu.cn
+  - +.msftconnecttest.com
+  - +.msftncsi.com
+  - msftconnecttest.com
+  - msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - +.srv.nintendo.net
+  - +.stun.playstation.net
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - +.ipv6.microsoft.com
+  - +.battlenet.com.cn
+  - +.wotgame.cn
+  - +.wggames.cn
+  - +.wowsgame.cn
+  - +.wargaming.net
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - +.stun.*.*
+  - +.stun.*.*.*
+  - +.stun.*.*.*.*
+  - heartbeat.belkin.com
+  - '*.linksys.com'
+  - '*.linksyssmartwifi.com'
+  - '*.router.asus.com'
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - '*.square-enix.com'
+  - '*.finalfantasyxiv.com'
+  - '*.ffxiv.com'
+  - '*.ff14.sdo.com'
+  - ff.dorado.sdo.com
+  - '*.mcdn.bilivideo.cn'
+  - +.media.dssott.com
+  - +.pvp.net
+  fallback:
+  - https://1.0.0.1/dns-query
+  - https://public.dns.iij.jp/dns-query
+  - tls://8.8.4.4:853
+  fallback-filter:
+    domain:
+    - +.facebook.com
+    - +.twitter.com
+    - +.google.com
+    - +.googleapis.com
+    - +.google.cn
+    - +.googleapis.cn
+    - +.xn--ngstr-lra8j.com
+    - +.googlevideo.com
+    - +.gvt1.com
+    - +.gmail.com
+    - +.youtube.com
+    - +.youtu.be
+    - +.gvt0.com
+    - +.gvt2.com
+    - +.gvt3.com
+    - +.gstatic.com
+    - +.265.com
+    - +.2mdn.net
+    - +.app-measurement.com
+    - +.c.admob.com
+    - +.clickserve.dartsearch.net
+    - +.crl.pki.goog
+    - +.doubleclick.net
+    - +.firebase-settings.crashlytics.com
+    - +.google-analytics.com
+    - +.googleadservices.com
+    - +.googleanalytics.com
+    - +.googleoptimize.com
+    - +.googlesyndication.com
+    - +.googletagmanager.com
+    - +.googletagservices.com
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+    - 127.0.0.1/32
+  ipv6: false
+  listen: 127.0.0.1:8853
+  nameserver:
+  - 114.114.114.114
+  - tls://223.5.5.5:853
+  - tls://223.6.6.6:853
+  - tls://1.12.12.12
+  - tls://120.53.53.53
+experimental:
+  sniff-tls-sni: true
+external-controller: 0.0.0.0:9090
+ipv6: false
+log-level: info
+mixed-port: 7893
+mode: rule
+port: 7890
+profile:
+  tracing: true
+proxies:
+- name: '🇬🇧 Traffic: 43.16 GB | 400 GB'
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20001
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: '💣 Expire: 2024-10-13'
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20001
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20001
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20002
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 03
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20003
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 04
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20004
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 05
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20005
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 06
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20006
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 07
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20007
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇭🇰 Hong Kong | 08
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20008
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20011
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20012
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 03
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20013
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 04
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20014
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 05
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20015
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 06
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20016
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 07
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20017
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇳 Taiwan | 08
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20018
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20021
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20022
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 03
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20023
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 04
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20024
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 05
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20025
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 06
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20026
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 07
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20027
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇸🇬 Singapore | 08
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20028
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20031
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20032
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 03
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20033
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 04
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20034
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 05
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20035
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 06
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20036
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 07
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20037
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇯🇵 Japan | 08
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20038
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20041
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20042
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 03
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20043
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 04
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20044
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 05
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20045
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 06
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20046
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 07
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20047
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇺🇸 United States | 08
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20048
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇦 Canada | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20051
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇬🇧 United Kingdom | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20052
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇬🇧 United Kingdom | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20053
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇩🇪 Germany | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20054
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇩🇪 Germany | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20055
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇳🇱 Netherlands | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20056
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇳🇱 Netherlands | 02
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20057
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇮🇹 Italy | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20058
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇪🇸 Spain | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20059
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇹🇷 Turkey | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20060
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇦🇺 Australia | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20061
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇦🇷 Argentina | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20062
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇧🇷 Brazil | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20063
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇨🇱 Chile | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20064
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇰🇷 Korea | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20065
+  server: oss-cn-shanghai.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇮🇳 India | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20066
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇮🇱 Israel | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20067
+  server: cos-ap-beijing.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇹🇭 Thailand | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20068
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇻🇳 Vietnam | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20069
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇲🇾 Malaysia | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20070
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+- name: 🇿🇦 Johannesburg | 01
+  password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee
+  port: 20071
+  server: oss-cn-guangzhou.wdcloud.pro
+  skip-cert-verify: true
+  sni: mmbiz.qpic.cn
+  type: trojan
+  udp: true
+proxy-groups:
+- name: Selection
+  proxies:
+  - '🇬🇧 Traffic: 43.16 GB | 400 GB'
+  - '💣 Expire: 2024-10-13'
+  - 🇭🇰 Hong Kong | 01
+  - 🇭🇰 Hong Kong | 02
+  - 🇭🇰 Hong Kong | 03
+  - 🇭🇰 Hong Kong | 04
+  - 🇭🇰 Hong Kong | 05
+  - 🇭🇰 Hong Kong | 06
+  - 🇭🇰 Hong Kong | 07
+  - 🇭🇰 Hong Kong | 08
+  - 🇨🇳 Taiwan | 01
+  - 🇨🇳 Taiwan | 02
+  - 🇨🇳 Taiwan | 03
+  - 🇨🇳 Taiwan | 04
+  - 🇨🇳 Taiwan | 05
+  - 🇨🇳 Taiwan | 06
+  - 🇨🇳 Taiwan | 07
+  - 🇨🇳 Taiwan | 08
+  - 🇸🇬 Singapore | 01
+  - 🇸🇬 Singapore | 02
+  - 🇸🇬 Singapore | 03
+  - 🇸🇬 Singapore | 04
+  - 🇸🇬 Singapore | 05
+  - 🇸🇬 Singapore | 06
+  - 🇸🇬 Singapore | 07
+  - 🇸🇬 Singapore | 08
+  - 🇯🇵 Japan | 01
+  - 🇯🇵 Japan | 02
+  - 🇯🇵 Japan | 03
+  - 🇯🇵 Japan | 04
+  - 🇯🇵 Japan | 05
+  - 🇯🇵 Japan | 06
+  - 🇯🇵 Japan | 07
+  - 🇯🇵 Japan | 08
+  - 🇺🇸 United States | 01
+  - 🇺🇸 United States | 02
+  - 🇺🇸 United States | 03
+  - 🇺🇸 United States | 04
+  - 🇺🇸 United States | 05
+  - 🇺🇸 United States | 06
+  - 🇺🇸 United States | 07
+  - 🇺🇸 United States | 08
+  - 🇨🇦 Canada | 01
+  - 🇬🇧 United Kingdom | 01
+  - 🇬🇧 United Kingdom | 02
+  - 🇩🇪 Germany | 01
+  - 🇩🇪 Germany | 02
+  - 🇳🇱 Netherlands | 01
+  - 🇳🇱 Netherlands | 02
+  - 🇮🇹 Italy | 01
+  - 🇪🇸 Spain | 01
+  - 🇹🇷 Turkey | 01
+  - 🇦🇺 Australia | 01
+  - 🇦🇷 Argentina | 01
+  - 🇧🇷 Brazil | 01
+  - 🇨🇱 Chile | 01
+  - 🇰🇷 Korea | 01
+  - 🇮🇳 India | 01
+  - 🇮🇱 Israel | 01
+  - 🇹🇭 Thailand | 01
+  - 🇻🇳 Vietnam | 01
+  - 🇲🇾 Malaysia | 01
+  - 🇿🇦 Johannesburg | 01
+  type: select
+- name: Telegram
+  proxies:
+  - Selection
+  - DIRECT
+  type: select
+- name: Google
+  proxies:
+  - Selection
+  - DIRECT
+  type: select
+- name: CN iCloud
+  proxies:
+  - DIRECT
+  - Selection
+  type: select
+- name: CN Apple
+  proxies:
+  - DIRECT
+  - Selection
+  type: select
+- name: AD Reject
+  proxies:
+  - REJECT
+  - Selection
+  - DIRECT
+  type: select
+- name: Match
+  proxies:
+  - Selection
+  - DIRECT
+  type: select
+redir-port: 7892
+rule-providers:
+  apple:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/apple.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+  applications:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/applications.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+  cncidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/cncidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+  direct:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/direct.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+  gfw:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/gfw.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+  google:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/google.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+  icloud:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/icloud.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+  lancidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/lancidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+  private:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/private.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+  proxy:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/proxy.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+  reject:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/reject.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+  telegramcidr:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/telegramcidr.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+  tld-not-cn:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/tld-not-cn.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+rules:
+- RULE-SET,applications,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- RULE-SET,private,DIRECT
+- RULE-SET,reject,AD Reject
+- RULE-SET,icloud,CN iCloud
+- RULE-SET,apple,CN Apple
+- RULE-SET,google,Google
+- RULE-SET,proxy,Selection
+- RULE-SET,direct,DIRECT
+- RULE-SET,lancidr,DIRECT
+- RULE-SET,cncidr,DIRECT
+- RULE-SET,telegramcidr,Telegram
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,Match
+socks-port: 7891

@@ -1,0 +1,476 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 0.0.0.0:9090
+clash-for-android:
+  append-system-dns: false
+profile:
+  tracing: true
+experimental:
+  sniff-tls-sni: true
+dns:
+  enable: true
+  listen: 127.0.0.1:8853
+  default-nameserver:
+    - 223.5.5.5
+    - 8.8.4.4
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.ipv6.microsoft.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.ff14.sdo.com"
+    - ff.dorado.sdo.com
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+    - +.pvp.net
+  nameserver:
+    - 114.114.114.114
+    - tls://223.5.5.5:853
+    - tls://223.6.6.6:853
+    - tls://1.12.12.12
+    - tls://120.53.53.53
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.facebook.com
+      - +.twitter.com
+      - +.google.com
+      - +.googleapis.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.xn--ngstr-lra8j.com
+      - +.googlevideo.com
+      - +.gvt1.com
+      - +.gmail.com
+      - +.youtube.com
+      - +.youtu.be
+      - +.gvt0.com
+      - +.gvt2.com
+      - +.gvt3.com
+      - +.gstatic.com
+      - +.265.com
+      - +.2mdn.net
+      - +.app-measurement.com
+      - +.c.admob.com
+      - +.clickserve.dartsearch.net
+      - +.crl.pki.goog
+      - +.doubleclick.net
+      - +.firebase-settings.crashlytics.com
+      - +.google-analytics.com
+      - +.googleadservices.com
+      - +.googleanalytics.com
+      - +.googleoptimize.com
+      - +.googlesyndication.com
+      - +.googletagmanager.com
+      - +.googletagservices.com
+proxies:
+  - {name: "🇬🇧 Traffic: 43.16 GB | 400 GB", server: oss-cn-guangzhou.wdcloud.pro, port: 20001, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: "💣 Expire: 2024-10-13", server: oss-cn-guangzhou.wdcloud.pro, port: 20001, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20001, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 02, server: oss-cn-guangzhou.wdcloud.pro, port: 20002, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 03, server: oss-cn-guangzhou.wdcloud.pro, port: 20003, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 04, server: oss-cn-guangzhou.wdcloud.pro, port: 20004, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 05, server: oss-cn-guangzhou.wdcloud.pro, port: 20005, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 06, server: oss-cn-guangzhou.wdcloud.pro, port: 20006, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 07, server: oss-cn-guangzhou.wdcloud.pro, port: 20007, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 08, server: oss-cn-guangzhou.wdcloud.pro, port: 20008, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20011, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 02, server: oss-cn-guangzhou.wdcloud.pro, port: 20012, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 03, server: oss-cn-guangzhou.wdcloud.pro, port: 20013, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 04, server: oss-cn-guangzhou.wdcloud.pro, port: 20014, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 05, server: oss-cn-guangzhou.wdcloud.pro, port: 20015, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 06, server: oss-cn-guangzhou.wdcloud.pro, port: 20016, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 07, server: oss-cn-guangzhou.wdcloud.pro, port: 20017, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 Taiwan | 08, server: oss-cn-guangzhou.wdcloud.pro, port: 20018, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20021, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 02, server: oss-cn-guangzhou.wdcloud.pro, port: 20022, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 03, server: oss-cn-guangzhou.wdcloud.pro, port: 20023, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 04, server: oss-cn-guangzhou.wdcloud.pro, port: 20024, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 05, server: oss-cn-guangzhou.wdcloud.pro, port: 20025, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 06, server: oss-cn-guangzhou.wdcloud.pro, port: 20026, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 07, server: oss-cn-guangzhou.wdcloud.pro, port: 20027, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 08, server: oss-cn-guangzhou.wdcloud.pro, port: 20028, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 01, server: oss-cn-shanghai.wdcloud.pro, port: 20031, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 02, server: oss-cn-shanghai.wdcloud.pro, port: 20032, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 03, server: oss-cn-shanghai.wdcloud.pro, port: 20033, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 04, server: oss-cn-shanghai.wdcloud.pro, port: 20034, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 05, server: oss-cn-shanghai.wdcloud.pro, port: 20035, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 06, server: oss-cn-shanghai.wdcloud.pro, port: 20036, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 07, server: oss-cn-shanghai.wdcloud.pro, port: 20037, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 08, server: oss-cn-shanghai.wdcloud.pro, port: 20038, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 01, server: oss-cn-shanghai.wdcloud.pro, port: 20041, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 02, server: oss-cn-shanghai.wdcloud.pro, port: 20042, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 03, server: oss-cn-shanghai.wdcloud.pro, port: 20043, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 04, server: oss-cn-shanghai.wdcloud.pro, port: 20044, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 05, server: oss-cn-shanghai.wdcloud.pro, port: 20045, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 06, server: oss-cn-shanghai.wdcloud.pro, port: 20046, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 07, server: oss-cn-shanghai.wdcloud.pro, port: 20047, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 08, server: oss-cn-shanghai.wdcloud.pro, port: 20048, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇦 Canada | 01, server: oss-cn-shanghai.wdcloud.pro, port: 20051, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 United Kingdom | 01, server: cos-ap-beijing.wdcloud.pro, port: 20052, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 United Kingdom | 02, server: cos-ap-beijing.wdcloud.pro, port: 20053, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 Germany | 01, server: cos-ap-beijing.wdcloud.pro, port: 20054, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 Germany | 02, server: cos-ap-beijing.wdcloud.pro, port: 20055, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 Netherlands | 01, server: cos-ap-beijing.wdcloud.pro, port: 20056, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 Netherlands | 02, server: cos-ap-beijing.wdcloud.pro, port: 20057, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇹 Italy | 01, server: cos-ap-beijing.wdcloud.pro, port: 20058, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇪🇸 Spain | 01, server: cos-ap-beijing.wdcloud.pro, port: 20059, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇷 Turkey | 01, server: cos-ap-beijing.wdcloud.pro, port: 20060, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 Australia | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20061, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇷 Argentina | 01, server: oss-cn-shanghai.wdcloud.pro, port: 20062, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇧🇷 Brazil | 01, server: oss-cn-shanghai.wdcloud.pro, port: 20063, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇱 Chile | 01, server: oss-cn-shanghai.wdcloud.pro, port: 20064, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 Korea | 01, server: oss-cn-shanghai.wdcloud.pro, port: 20065, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 India | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20066, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇱 Israel | 01, server: cos-ap-beijing.wdcloud.pro, port: 20067, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇭 Thailand | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20068, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇻🇳 Vietnam | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20069, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇲🇾 Malaysia | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20070, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 Johannesburg | 01, server: oss-cn-guangzhou.wdcloud.pro, port: 20071, type: trojan, password: 1bf02781-6ddb-11ed-bbdc-f23c935380ee, sni: mmbiz.qpic.cn, skip-cert-verify: true, udp: true}
+proxy-groups:
+  - name: 代理
+    type: select
+    proxies:
+      - "🇬🇧 Traffic: 43.16 GB | 400 GB"
+      - "💣 Expire: 2024-10-13"
+      - 🇭🇰 Hong Kong | 01
+      - 🇭🇰 Hong Kong | 02
+      - 🇭🇰 Hong Kong | 03
+      - 🇭🇰 Hong Kong | 04
+      - 🇭🇰 Hong Kong | 05
+      - 🇭🇰 Hong Kong | 06
+      - 🇭🇰 Hong Kong | 07
+      - 🇭🇰 Hong Kong | 08
+      - 🇨🇳 Taiwan | 01
+      - 🇨🇳 Taiwan | 02
+      - 🇨🇳 Taiwan | 03
+      - 🇨🇳 Taiwan | 04
+      - 🇨🇳 Taiwan | 05
+      - 🇨🇳 Taiwan | 06
+      - 🇨🇳 Taiwan | 07
+      - 🇨🇳 Taiwan | 08
+      - 🇸🇬 Singapore | 01
+      - 🇸🇬 Singapore | 02
+      - 🇸🇬 Singapore | 03
+      - 🇸🇬 Singapore | 04
+      - 🇸🇬 Singapore | 05
+      - 🇸🇬 Singapore | 06
+      - 🇸🇬 Singapore | 07
+      - 🇸🇬 Singapore | 08
+      - 🇯🇵 Japan | 01
+      - 🇯🇵 Japan | 02
+      - 🇯🇵 Japan | 03
+      - 🇯🇵 Japan | 04
+      - 🇯🇵 Japan | 05
+      - 🇯🇵 Japan | 06
+      - 🇯🇵 Japan | 07
+      - 🇯🇵 Japan | 08
+      - 🇺🇸 United States | 01
+      - 🇺🇸 United States | 02
+      - 🇺🇸 United States | 03
+      - 🇺🇸 United States | 04
+      - 🇺🇸 United States | 05
+      - 🇺🇸 United States | 06
+      - 🇺🇸 United States | 07
+      - 🇺🇸 United States | 08
+      - 🇨🇦 Canada | 01
+      - 🇬🇧 United Kingdom | 01
+      - 🇬🇧 United Kingdom | 02
+      - 🇩🇪 Germany | 01
+      - 🇩🇪 Germany | 02
+      - 🇳🇱 Netherlands | 01
+      - 🇳🇱 Netherlands | 02
+      - 🇮🇹 Italy | 01
+      - 🇪🇸 Spain | 01
+      - 🇹🇷 Turkey | 01
+      - 🇦🇺 Australia | 01
+      - 🇦🇷 Argentina | 01
+      - 🇧🇷 Brazil | 01
+      - 🇨🇱 Chile | 01
+      - 🇰🇷 Korea | 01
+      - 🇮🇳 India | 01
+      - 🇮🇱 Israel | 01
+      - 🇹🇭 Thailand | 01
+      - 🇻🇳 Vietnam | 01
+      - 🇲🇾 Malaysia | 01
+      - 🇿🇦 Johannesburg | 01
+  - name: 电报
+    type: select
+    proxies:
+      - 代理
+      - 🇸🇬 Singapore | 01
+      - 🇸🇬 Singapore | 02
+      - 🇸🇬 Singapore | 03
+      - 🇸🇬 Singapore | 04
+      - 🇸🇬 Singapore | 05
+      - 🇸🇬 Singapore | 06
+      - 🇸🇬 Singapore | 07
+      - 🇸🇬 Singapore | 08
+      - DIRECT
+  - name: 油管
+    type: select
+    proxies:
+      - 代理
+      - "🇬🇧 Traffic: 43.16 GB | 400 GB"
+      - "💣 Expire: 2024-10-13"
+      - 🇭🇰 Hong Kong | 01
+      - 🇭🇰 Hong Kong | 02
+      - 🇭🇰 Hong Kong | 03
+      - 🇭🇰 Hong Kong | 04
+      - 🇭🇰 Hong Kong | 05
+      - 🇭🇰 Hong Kong | 06
+      - 🇭🇰 Hong Kong | 07
+      - 🇭🇰 Hong Kong | 08
+      - 🇨🇳 Taiwan | 01
+      - 🇨🇳 Taiwan | 02
+      - 🇨🇳 Taiwan | 03
+      - 🇨🇳 Taiwan | 04
+      - 🇨🇳 Taiwan | 05
+      - 🇨🇳 Taiwan | 06
+      - 🇨🇳 Taiwan | 07
+      - 🇨🇳 Taiwan | 08
+      - 🇸🇬 Singapore | 01
+      - 🇸🇬 Singapore | 02
+      - 🇸🇬 Singapore | 03
+      - 🇸🇬 Singapore | 04
+      - 🇸🇬 Singapore | 05
+      - 🇸🇬 Singapore | 06
+      - 🇸🇬 Singapore | 07
+      - 🇸🇬 Singapore | 08
+      - 🇯🇵 Japan | 01
+      - 🇯🇵 Japan | 02
+      - 🇯🇵 Japan | 03
+      - 🇯🇵 Japan | 04
+      - 🇯🇵 Japan | 05
+      - 🇯🇵 Japan | 06
+      - 🇯🇵 Japan | 07
+      - 🇯🇵 Japan | 08
+      - 🇺🇸 United States | 01
+      - 🇺🇸 United States | 02
+      - 🇺🇸 United States | 03
+      - 🇺🇸 United States | 04
+      - 🇺🇸 United States | 05
+      - 🇺🇸 United States | 06
+      - 🇺🇸 United States | 07
+      - 🇺🇸 United States | 08
+      - 🇨🇦 Canada | 01
+      - 🇬🇧 United Kingdom | 01
+      - 🇬🇧 United Kingdom | 02
+      - 🇩🇪 Germany | 01
+      - 🇩🇪 Germany | 02
+      - 🇳🇱 Netherlands | 01
+      - 🇳🇱 Netherlands | 02
+      - 🇮🇹 Italy | 01
+      - 🇪🇸 Spain | 01
+      - 🇹🇷 Turkey | 01
+      - 🇦🇺 Australia | 01
+      - 🇦🇷 Argentina | 01
+      - 🇧🇷 Brazil | 01
+      - 🇨🇱 Chile | 01
+      - 🇰🇷 Korea | 01
+      - 🇮🇳 India | 01
+      - 🇮🇱 Israel | 01
+      - 🇹🇭 Thailand | 01
+      - 🇻🇳 Vietnam | 01
+      - 🇲🇾 Malaysia | 01
+      - 🇿🇦 Johannesburg | 01
+      - DIRECT
+  - name: 奈飞
+    type: select
+    proxies:
+      - 代理
+      - "🇬🇧 Traffic: 43.16 GB | 400 GB"
+      - "💣 Expire: 2024-10-13"
+      - 🇭🇰 Hong Kong | 01
+      - 🇭🇰 Hong Kong | 02
+      - 🇭🇰 Hong Kong | 03
+      - 🇭🇰 Hong Kong | 04
+      - 🇭🇰 Hong Kong | 05
+      - 🇭🇰 Hong Kong | 06
+      - 🇭🇰 Hong Kong | 07
+      - 🇭🇰 Hong Kong | 08
+      - 🇨🇳 Taiwan | 01
+      - 🇨🇳 Taiwan | 02
+      - 🇨🇳 Taiwan | 03
+      - 🇨🇳 Taiwan | 04
+      - 🇨🇳 Taiwan | 05
+      - 🇨🇳 Taiwan | 06
+      - 🇨🇳 Taiwan | 07
+      - 🇨🇳 Taiwan | 08
+      - 🇸🇬 Singapore | 01
+      - 🇸🇬 Singapore | 02
+      - 🇸🇬 Singapore | 03
+      - 🇸🇬 Singapore | 04
+      - 🇸🇬 Singapore | 05
+      - 🇸🇬 Singapore | 06
+      - 🇸🇬 Singapore | 07
+      - 🇸🇬 Singapore | 08
+      - 🇯🇵 Japan | 01
+      - 🇯🇵 Japan | 02
+      - 🇯🇵 Japan | 03
+      - 🇯🇵 Japan | 04
+      - 🇯🇵 Japan | 05
+      - 🇯🇵 Japan | 06
+      - 🇯🇵 Japan | 07
+      - 🇯🇵 Japan | 08
+      - 🇺🇸 United States | 01
+      - 🇺🇸 United States | 02
+      - 🇺🇸 United States | 03
+      - 🇺🇸 United States | 04
+      - 🇺🇸 United States | 05
+      - 🇺🇸 United States | 06
+      - 🇺🇸 United States | 07
+      - 🇺🇸 United States | 08
+      - 🇨🇦 Canada | 01
+      - 🇬🇧 United Kingdom | 01
+      - 🇬🇧 United Kingdom | 02
+      - 🇩🇪 Germany | 01
+      - 🇩🇪 Germany | 02
+      - 🇳🇱 Netherlands | 01
+      - 🇳🇱 Netherlands | 02
+      - 🇮🇹 Italy | 01
+      - 🇪🇸 Spain | 01
+      - 🇹🇷 Turkey | 01
+      - 🇦🇺 Australia | 01
+      - 🇦🇷 Argentina | 01
+      - 🇧🇷 Brazil | 01
+      - 🇨🇱 Chile | 01
+      - 🇰🇷 Korea | 01
+      - 🇮🇳 India | 01
+      - 🇮🇱 Israel | 01
+      - 🇹🇭 Thailand | 01
+      - 🇻🇳 Vietnam | 01
+      - 🇲🇾 Malaysia | 01
+      - 🇿🇦 Johannesburg | 01
+      - DIRECT
+  - name: b站
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 Hong Kong | 01
+      - 🇭🇰 Hong Kong | 02
+      - 🇭🇰 Hong Kong | 03
+      - 🇭🇰 Hong Kong | 04
+      - 🇭🇰 Hong Kong | 05
+      - 🇭🇰 Hong Kong | 06
+      - 🇭🇰 Hong Kong | 07
+      - 🇭🇰 Hong Kong | 08
+      - 🇨🇳 Taiwan | 01
+      - 🇨🇳 Taiwan | 02
+      - 🇨🇳 Taiwan | 03
+      - 🇨🇳 Taiwan | 04
+      - 🇨🇳 Taiwan | 05
+      - 🇨🇳 Taiwan | 06
+      - 🇨🇳 Taiwan | 07
+      - 🇨🇳 Taiwan | 08
+  - name: 规则外路由选择
+    type: select
+    proxies:
+      - 代理
+      - DIRECT
+rules:
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
