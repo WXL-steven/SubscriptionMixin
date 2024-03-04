@@ -112,8 +112,16 @@ async def convert(subscription_url: str = Query(..., alias="subscription_url")):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error converting subscription: {e}")
 
-    # 返回转换后的结果
-    return converted_data
+    # 创建新的响应对象
+    converted_response = PlainTextResponse(converted_data)
+
+    # 保留原始响应的特定头部
+    headers_to_keep = ['Content-Disposition', 'Subscription-Userinfo']
+    for header in headers_to_keep:
+        if header in response.headers:
+            converted_response.headers[header] = response.headers[header]
+
+    return converted_response
 
 
 if __name__ == "__main__":
