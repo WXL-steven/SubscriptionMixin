@@ -127,6 +127,7 @@ rules:
     - RULE-SET,applications,DIRECT
     - DOMAIN,clash.razord.top,DIRECT
     - DOMAIN,yacd.haishan.me,DIRECT
+    - DST-PORT,22,DIRECT
     - RULE-SET,private,DIRECT
     - RULE-SET,reject,AD Reject
     - RULE-SET,icloud,CN iCloud
